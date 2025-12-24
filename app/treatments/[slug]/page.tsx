@@ -21,8 +21,89 @@ export default function TreatmentPage() {
 
   const otherTreatments = getAllTreatments().filter(t => t.slug !== slug).slice(0, 3)
 
+  // Structured Data for this treatment
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `https://diluxaesthetics.co.uk/treatments/${treatment.slug}#service`,
+    "name": treatment.name,
+    "description": treatment.description,
+    "provider": {
+      "@type": "HealthAndBeautyBusiness",
+      "@id": "https://diluxaesthetics.co.uk/#business"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Cambridge"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": treatment.price.replace(/[^0-9]/g, ''),
+      "priceCurrency": "GBP",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": treatment.price.replace(/[^0-9]/g, ''),
+        "priceCurrency": "GBP",
+        "valueAddedTaxIncluded": true
+      }
+    },
+    "termsOfService": "https://diluxaesthetics.co.uk/privacy-policy"
+  }
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": treatment.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://diluxaesthetics.co.uk"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Treatments",
+        "item": "https://diluxaesthetics.co.uk/treatments"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": treatment.name,
+        "item": `https://diluxaesthetics.co.uk/treatments/${treatment.slug}`
+      }
+    ]
+  }
+
   return (
     <>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <SiteHeader onBookingClick={() => setIsBookingOpen(true)} />
 
       {/* Hero Section */}
