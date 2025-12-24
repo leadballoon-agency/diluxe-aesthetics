@@ -8,10 +8,10 @@ import Link from 'next/link'
 
 const qualifications = [
   'Advanced Aesthetics Practitioner',
-  'Botulinum Toxin & Dermal Fillers Certified',
-  'Profhilo & Skin Booster Trained',
-  'Polynucleotide Treatment Specialist',
-  'Fat Dissolving Injectable Certified',
+  'Energy-Based Treatment Specialist',
+  'Laser & HIFU Certified',
+  'Botulinum Toxin & Dermal Fillers Trained',
+  'Profhilo & Skin Booster Specialist',
   'Fully Insured & Registered',
 ]
 
@@ -93,8 +93,15 @@ export default function AboutPage() {
               <div className="space-y-4 text-neutral-600 leading-relaxed">
                 <p>
                   Welcome to Diluxe Aesthetics! I&apos;m Consolata, an advanced aesthetics practitioner
-                  based in Cherry Hinton, Cambridge. My journey into aesthetics began from a deep
-                  passion for helping people feel confident and beautiful in their own skin.
+                  based in Cherry Hinton, Cambridge. With years of experience working at one of
+                  Cambridge&apos;s most respected aesthetic clinics, I&apos;ve now launched my own practice
+                  to offer a more personal, dedicated service.
+                </p>
+                <p>
+                  My background as an Energy Treatment Therapist and Laser Specialist has given me
+                  extensive expertise in a wide range of aesthetic treatments. I&apos;ve helped hundreds
+                  of clients achieve their aesthetic goals, always prioritising natural-looking results
+                  and exceptional care.
                 </p>
                 <p>
                   I believe that aesthetic treatments should enhance your natural features, not
@@ -102,14 +109,9 @@ export default function AboutPage() {
                   you looking refreshed and rejuvenated – never overdone.
                 </p>
                 <p>
-                  Operating from my private clinic, I offer a calm, welcoming environment where
-                  you can feel completely at ease. I take the time to truly understand your goals
-                  and concerns, ensuring every treatment is tailored specifically to you.
-                </p>
-                <p>
-                  Whether you&apos;re looking to smooth fine lines, add subtle volume to your lips,
-                  or rejuvenate your skin, I&apos;m here to guide you through every step of your
-                  aesthetic journey.
+                  At Diluxe Aesthetics, you&apos;ll receive the personalised attention you deserve in a
+                  calm, private setting. I take the time to truly understand your goals and concerns,
+                  ensuring every treatment is tailored specifically to you.
                 </p>
               </div>
 

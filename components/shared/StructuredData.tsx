@@ -322,10 +322,12 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://diluxaesthetics.co.uk/#consolata",
-    "name": "Consolata",
+    "name": "Consolata DeLoreo",
     "givenName": "Consolata",
+    "familyName": "DeLoreo",
+    "alternateName": "Consi",
     "jobTitle": "Advanced Aesthetics Practitioner",
-    "description": "Advanced aesthetics practitioner specialising in natural enhancements and subtle, beautiful results. Founder and lead practitioner at Diluxe Aesthetics Cambridge.",
+    "description": "Advanced aesthetics practitioner and energy treatment specialist with years of experience at Cambridge's leading aesthetic clinics. Founder and lead practitioner at Diluxe Aesthetics Cambridge, specialising in natural enhancements and subtle, beautiful results.",
     "image": {
       "@type": "ImageObject",
       "url": "https://storage.googleapis.com/msgsndr/0kfpm8NVBgT1ZEDGRJF3/media/694c0869e889d3cb4749a7dc.png",
@@ -348,6 +350,9 @@ export default function StructuredData() {
       "Aqualyx",
       "Vitamin B12 Injections",
       "Biotin Injections",
+      "HIFU Treatments",
+      "Laser Treatments",
+      "Energy-Based Treatments",
       "Facial Anatomy",
       "Aesthetic Medicine",
       "Patient Safety"
@@ -361,15 +366,19 @@ export default function StructuredData() {
       {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Professional Training",
-        "name": "Dermal Filler Training"
+        "name": "Energy Treatment Therapist"
       },
       {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Professional Training",
-        "name": "Anti-Wrinkle Injection Training"
+        "name": "Laser Specialist Certification"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional Training",
+        "name": "HIFU Treatment Certification"
       }
     ],
-    "award": ["5-Star Rated Aesthetics Practitioner"],
     "sameAs": ["https://www.instagram.com/diluxe.aesthetics"]
   }
 
