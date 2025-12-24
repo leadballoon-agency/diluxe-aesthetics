@@ -154,36 +154,6 @@ export default function StructuredData() {
       "Non-Surgical Treatments"
     ],
     "knowsLanguage": ["en-GB"],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "12",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Sarah M." },
-        "datePublished": "2024-12-10",
-        "reviewBody": "Absolutely amazing experience! Consolata made me feel so comfortable and the results are incredible. My lips look so natural and exactly what I wanted.",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Emma T." },
-        "datePublished": "2024-12-05",
-        "reviewBody": "Best anti-wrinkle treatment I've ever had. Consolata really listens to what you want and delivers. Will definitely be coming back!",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Lucy R." },
-        "datePublished": "2024-11-28",
-        "reviewBody": "Had skin boosters done and my skin has never looked better. So hydrated and glowing. Highly recommend Diluxe Aesthetics!",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-      }
-    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Aesthetic Treatments Menu",
